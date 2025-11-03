@@ -1,1 +1,9 @@
-site_name: My Docs
+site_name: DiceSMS API
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: blue
+    accent: indigo
+  logo: assets/dice_logo.png
+  favicon: assets/favicon.ico

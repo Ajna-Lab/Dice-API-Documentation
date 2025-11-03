@@ -1,17 +1,31 @@
-# Welcome to MkDocs
+# DiceSMS Gateway API
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
+## Overview
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+DiceSMS API gateway is a comprehensive solution for customers or businesses, big and small, to send and receive SMS via a web based API. DiceSMS is a multi-operator SMPP messaging service with queued sending, delivery receipt (DLR) processing, credit accounting, and live analytics. 
 
-## Project layout
+By integrating DiceSMS gateway to your application, users can send/receive messages between the following providers:
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+1. **NTC**
+2. **NCELL**
+
+
+## Features
+
+- Queue-based sending with per-operator rate limits and retries
+- Delivery receipt processing with optional refunds
+- Consistent credit accounting (reserve → debit on submit → release on failure)
+- Unified persistence task for submit and DLR updates
+- Admin/analytics pages, metrics snapshot API, and optional realtime dashboard
+
+
+
+## Support
+
+For any inquiries regarding DiceSMS, feel free to reach out to us through:
+
++ Mobile (Viber / Whatsapp): 9801912821, 9813946169
++ Email: contact@dicesms.asia, support@dicesms.asia
+
+We are here to assist you with any questions or concerns you may have.
