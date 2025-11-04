@@ -4,6 +4,7 @@ nav:
   - Overview: index.md
   - Getting Started: getting_started.md
   - SMS Gateway:
+      - API Authentication: sms/authentication.md
       - Send SMS: sms/send_sms.md
       - Report: sms/report.md
   - Transactions:
