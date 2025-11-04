@@ -1,4 +1,15 @@
-site_name: DiceSMS API
+site_name: DiceSMS Gateway API
+
+nav:
+  - Overview: index.md
+  - Getting Started: getting_started.md
+  - SMS Gateway:
+      - Send SMS: sms/send_sms.md
+      - Report: sms/report.md
+  - Transactions:
+      - Transaction Report: transactions/transaction_report.md
+  - FAQs: faq.md
+
 theme:
   name: material
   palette:
@@ -7,3 +18,14 @@ theme:
     accent: indigo
   logo: assets/dice_logo.png
   favicon: assets/favicon.ico
+  features:
+    - navigation.path
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Ajna-Lab
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/company/ajna-lab
+
+copyright: Copyright &copy; 2025 Ajnalab Pvt Ltd. All rights reserved.

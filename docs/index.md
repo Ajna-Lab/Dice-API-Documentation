@@ -20,7 +20,6 @@ By integrating DiceSMS gateway to your application, users can send/receive messa
 - Admin/analytics pages, metrics snapshot API, and optional realtime dashboard
 
 
-
 ## Support
 
 For any inquiries regarding DiceSMS, feel free to reach out to us through:
