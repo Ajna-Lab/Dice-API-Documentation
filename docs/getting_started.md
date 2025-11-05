@@ -21,10 +21,10 @@ Select an SMS package that fits your usage requirements from the available optio
 ### Step 3: Generate API Token
 1. Navigate to [API Token Generation](https://dicesms.asia/api/token-generate/)
 
-2. Generate your unique API token
+2. You can quickly generate a unique API token with only a single click. Easy peasy! <br><br>
 ![Generate API Token](img/GenerateToken.png)
 ![API Token Generated](img/GeneratedToken.png)
-
+<br>
 3. **Important:** Please make sure to store this token securely.
 
 ### Step 4: Activate API Token

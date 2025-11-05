@@ -1,4 +1,4 @@
-# API Authentication
+# API Authentication: Token-based authentication
 
 ### Custom Auth Token
 
@@ -25,5 +25,4 @@
 
 - `200 OK` - Authentication successful
 - `400 Bad Request` - Invalid credentials
-
----
+- `500 Internal Server Error`: Server Encountered an Error 

@@ -1,4 +1,4 @@
-## Send SMS without token
+<!-- ## Send SMS without token
 
 **Endpoint:** `POST /api/sms/`
 
@@ -56,20 +56,20 @@
 
 - `200 OK`: SMS sent successfully
 - `400 Bad Request`: Invalid request data
-- `401 Unauthorized`: Invalid or missing auth token
+- `401 Unauthorized`: Invalid or missing auth token -->
 
 ## Send SMS With Token
 
 **Endpoint:** `POST /api/sms-with-token/`
 
-**Description:** Send SMS using a specific API token.
+**Description:** Send SMS using a specific API token. This API token can be generated from [API Token Generation](https://dicesms.asia/api/token-generate/). Please refer to [Getting started](../getting_started.md/#step-3-generate-api-token) for further details on how to generate API tokens.
 
 
 **Request Payload:**
 
 | Field | Required | Description |
 |-------------|--------|-------------|
-| token | Yes | <ul> <li>UUID</li> <li>A valid token provided by the company.</li> </ul> |
+| token | Yes | <ul> <li>UUID</li> <li>A valid token generated from [API Token Generation](https://dicesms.asia/api/token-generate/).</li> </ul> |
 | phone_number | Yes |  <ul> <li>Array of strings</li> <li>List of phone numbers to send the SMS to.</li> <li>Each phone number must be between 1 and 15 characters.</li> </ul> |
 | message | Yes | <ul> <li>String</li> <li>The SMS message to be sent must be between 1 and 1000 characters.</li> </ul> |
 | sender_id | No | <ul><li>Optional</li></ul> |

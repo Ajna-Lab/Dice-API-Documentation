@@ -6,16 +6,23 @@ nav:
   - SMS Gateway:
       - API Authentication: sms/authentication.md
       - Send SMS: sms/send_sms.md
-      - Report: sms/report.md
+      - SMS Delivery Report: sms/report.md
   - Transactions:
-      - Transaction Report: transactions/transaction_report.md
-  - FAQs: faq.md
+      - Report: transactions/transaction_report.md
+  # - FAQs: faq.md
 
 theme:
   name: material
   palette:
-    scheme: slate
-    primary: blue
+    scheme: default
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+    # scheme: slate
+    # toggle:
+    #   icon: material/brightness-4
+    #   name: Switch to Dark mode
+    primary: light
     accent: indigo
   logo: assets/dice_logo.png
   favicon: assets/favicon.ico

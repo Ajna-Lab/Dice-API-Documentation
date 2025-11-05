@@ -1,4 +1,4 @@
-# Transaction Report
+# Credit Purchase Transaction Report
 
 
 **Endpoint:** `GET /api/transaction/report/`
@@ -12,19 +12,8 @@
 }
 ```
 
-**Response:**
-```json
-{
-  "amount": 0,
-  "remarks": "string",
-  "currency": "string",
-  "status": "S",
-  "transaction_date": "2025-11-04T10:23:02.315Z",
-  "service_charge": 0
-}
-```
+**Response Body:**
 
-**Response Sample:**
 ```json
 {
     "amount": 100,
@@ -35,3 +24,35 @@
     "service_charge": 0
 }
 ```
+
+**Status Codes:**
+
+- `200 OK`
+- `500 Internal Server Error`
+
+**Common Error Responses**
+
+**1. Batch ID not found**
+    
+Status Code: `404 Not Found`
+
+``` json
+{
+    "message": "No transactions found.",
+}
+```
+
+
+**2. Error while fetching batch IDs**
+    
+Status Code: `500 Internal Server Error`
+
+``` json
+{
+    "error": "An error occurred while fetching transactions.",
+}
+```
+
+
+
+
