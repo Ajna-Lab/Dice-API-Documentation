@@ -291,3 +291,35 @@ Status Code: `500 Internal Server Error`
     "error": "An error occurred while fetching SMS reports.",
 }
 ```
+
+
+## Get SMS Metrics
+
+**Endpoint:** `GET api/metrics/snapshot/`
+
+**Description:** Get metric snapshot of SMS messages.
+
+**Permission:** User has to be a staff, i.e. `is_staff = True`
+
+**Headers:**
+```
+{
+    "Authorization": "Token <YOUR_AUTH_KEY>"
+}
+```
+
+**Response Body:**
+```json
+{
+  "sms:metrics:enqueue:d:20251105": 3,
+  "sms:metrics:enqueue:op:NCELL:d:20251105": 3,
+  "sms:metrics:enqueue": 3,
+  "sms:metrics:enqueue:op:NCELL": 3
+}
+```
+
+**Status Codes:**
+
+- `200 OK`
+- `403 Forbidden`
+- `500 Internal Server Error`
