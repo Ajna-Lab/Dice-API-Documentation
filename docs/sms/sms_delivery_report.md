@@ -65,6 +65,8 @@ Status Code: `500 Internal Server Error`
 }
 ```
 
+--- 
+
 
 ## Get SMS Report by `batch_id`
 
@@ -188,6 +190,8 @@ Status Code: `500 Internal Server Error`
     "error": "An error occurred while fetching SMS messages.",
 }
 ```
+
+---
 
 
 ## Get all SMS Report
