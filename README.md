@@ -77,7 +77,7 @@ The built site will be in the `site/` directory.
 - **Getting Started**: Account setup and API token generation ([docs/getting_started.md](docs/getting_started.md))
 - **API Authentication**: Token-based authentication ([docs/sms/authentication.md](docs/sms/authentication.md))
 - **Send SMS**: SMS sending endpoints ([docs/sms/send_sms.md](docs/sms/send_sms.md))
-- **Report**: Batch IDs and delivery reports ([docs/sms/report.md](docs/sms/report.md))
+- **Report**: Batch IDs and delivery reports ([docs/sms/report.md](docs/sms/sms_delivery_report.md))
 - **Transaction Report**: Credit purchase transactions ([docs/transactions/transaction_report.md](docs/transactions/transaction_report.md))
 
 ## Theme and Features
