@@ -6,7 +6,7 @@ nav:
   - SMS Gateway:
       - API Authentication: sms/authentication.md
       - Send SMS: sms/send_sms.md
-      - SMS Delivery Report: sms/report.md
+      - SMS Delivery Report: sms/sms_delivery_report.md
   - Transactions:
       - Report: transactions/transaction_report.md
   # - FAQs: faq.md
