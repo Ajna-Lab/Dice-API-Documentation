@@ -61,7 +61,7 @@ The built site will be in the `site/` directory.
 │   ├── assets/
 │   │   ├── dice_logo.png              # Logo
 │   │   └── favicon.ico                # Favicon
-│   ├── img/                           # Screenshots and images
+│   ├── img/                           # Images
 │   ├── sms/
 │   │   ├── authentication.md          # API authentication
 │   │   ├── send_sms.md                # SMS sending endpoints
