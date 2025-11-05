@@ -70,7 +70,7 @@ Status Code: `500 Internal Server Error`
 
 **Endpoint:** `GET /api/sms-report/{batch_id}/`
 
-**Description:** Get detailed SMS report for a specific batch ID retrieved from [`GET /api/batch-ids`](report.md/#get-all-batch-ids).
+**Description:** Get detailed SMS report for a specific batch ID retrieved from [`GET /api/batch-ids`](sms_delivery_report.md/#get-all-batch-ids).
 
 **Headers:**
 ```
