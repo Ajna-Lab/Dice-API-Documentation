@@ -25,7 +25,7 @@ Select an SMS package that fits your usage requirements from the available optio
 ![Generate API Token](img/GenerateToken.png)
 ![API Token Generated](img/GeneratedToken.png)
 
-3. **Important:** Store this token securely - it will be used for all API requests
+3. **Important:** Please make sure to store this token securely.
 
 ### Step 4: Activate API Token
 Complete the activation process to enable API access.

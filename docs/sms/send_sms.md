@@ -1,10 +1,8 @@
-## SMS Services
-
-### Send SMS
+## Send SMS without token
 
 **Endpoint:** `POST /api/sms/`
 
-**Description:** Send SMS message to recipients.
+**Description:** Send SMS message to recipients without API Token.
 
 **Headers:** 
 ```
@@ -60,7 +58,7 @@
 - `400 Bad Request`: Invalid request data
 - `401 Unauthorized`: Invalid or missing auth token
 
-### Send SMS With Token
+## Send SMS With Token
 
 **Endpoint:** `POST /api/sms-with-token/`
 
@@ -117,7 +115,7 @@
 - `500 Internal Server Error`: Server Encountered an Error
 
 
-### Error Responses
+## Common Error Responses
 
 **1. API token is not UUID**
     
@@ -128,4 +126,25 @@ Status Code: `400 Bad Request`
     "error": "Invalid token format. Please provide a valid UUID.",
 }
 ```
+
+
+**2. API token does not exist**
     
+Status Code: `400 Bad Request`
+
+``` json
+{
+    "error": "Invalid token provided.",
+}
+```    
+
+
+**3. Incase of insufficient credits**
+
+Status Code: `402 Payment Required`
+
+``` json
+{
+    "message": "Insufficient credit",
+}
+```    
