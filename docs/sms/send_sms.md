@@ -58,7 +58,7 @@
 - `400 Bad Request`: Invalid request data
 - `401 Unauthorized`: Invalid or missing auth token -->
 
-## Send SMS With Token
+### Send SMS With Token
 
 **Endpoint:** `POST /api/sms-with-token/`
 
@@ -148,3 +148,125 @@ Status Code: `402 Payment Required`
     "message": "Insufficient credit",
 }
 ```    
+---
+
+## Queue an SMS Message
+
+**Endpoint:** `POST /api/sms-queued/`
+
+**Description:** Queue the SMS message.
+
+**Headers:** 
+```
+{
+    "Authorization": "Token <YOUR_AUTH_KEY>",
+    "Content-Type": "application/json"
+}
+```
+
+**Request Payload:**
+
+| Field | Required | Description |
+|-------------|--------|-------------|
+| phone_number | Yes |  <ul> <li>Array of strings</li> <li>List of phone numbers to send the SMS to.</li> <li>Each phone number must be between 1 and 15 characters.</li> </ul> |
+| message | Yes | <ul> <li>String</li> <li>The SMS message to be sent must be between 1 and 1000 characters.</li> </ul> |
+<!-- | sender_id | No | <ul><li>Optional</li></ul> | -->
+
+
+
+**Request Body:**
+```json
+{
+  "phone_number": [
+    "9813012345", "0000001787"
+  ],
+  "message": "Hello, whats up?"
+}
+```
+
+**Response:**
+```json
+{
+  "status": "ENROUTE",
+  "message": "SMS queued for delivery",
+  "batch_id": "1762367443049",
+  "enqueued": [
+    {
+      "operator": "NCELL",
+      "phone": "9813012345",
+      "job_id": "job:1762367443123:NCELL:"
+    }
+  ],
+  "invalid_phone_numbers": [
+    "0000001787"
+  ],
+  "content": "Hello, whats up?"
+}
+```
+
+**Status Codes:**
+
+- `200 OK`: SMS sent successfully
+- `400 Bad Request`: Invalid request data
+- `401 Unauthorized`: Invalid or missing auth token
+- `500 Internal Server Error`: I
+ 
+
+
+## Common Error Responses
+
+
+**1. Incase of insufficient credits**
+
+Status Code: `402 Payment Required`
+
+``` json
+{
+    "message": "Insufficient credit",
+}
+```    
+---
+
+## Depth of Queued Messages 
+
+
+**Endpoint:** `GET /api/queue-depth/`
+
+**Description:** Get all queued messages.
+
+**Headers:**
+```
+{
+    "Authorization": "Token <YOUR_AUTH_KEY>"
+}
+```
+
+**Response Body:**
+
+```json
+{
+  "NTC": {
+    "queue": 0,
+    "connection": {
+      "state": null,
+      "last_updated_age_sec": null,
+      "last_enquire_link_age_sec": null
+    }
+  },
+  "NCELL": {
+    "queue": 3,
+    "connection": {
+      "state": null,
+      "last_updated_age_sec": null,
+      "last_enquire_link_age_sec": null
+    }
+  }
+}
+```
+
+**Status Codes:**
+
+- `200 OK`
+- `500 Internal Server Error`
+
+---
