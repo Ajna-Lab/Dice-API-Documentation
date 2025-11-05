@@ -65,7 +65,7 @@ The built site will be in the `site/` directory.
 │   ├── sms/
 │   │   ├── authentication.md          # API authentication
 │   │   ├── send_sms.md                # SMS sending endpoints
-│   │   └── report.md                  # SMS reporting
+│   │   └── sms_delivery_report.md     # SMS reporting
 │   └── transactions/
 │       └── transaction_report.md      # Transaction reports
 └── .gitignore                         # Git ignore file
