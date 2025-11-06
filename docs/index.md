@@ -26,7 +26,7 @@ By integrating DiceSMS gateway to your application, users can send/receive messa
 
 For any inquiries regarding DiceSMS, feel free to reach out to us through:
 
-+ Mobile (Viber / Whatsapp): 9843815980, 9813946169
++ Mobile (Viber / Whatsapp): 9843815980
 + Email: contact@dicesms.asia, support@dicesms.asia
 
 We are here to assist you with any questions or concerns you may have.
