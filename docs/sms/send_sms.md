@@ -65,6 +65,14 @@
 **Description:** Send SMS using a specific API token. This API token can be generated from [API Token Generation](https://dicesms.asia/api/token-generate/). Please refer to [Getting started](../getting_started.md/#step-3-generate-api-token) for further details on how to generate API tokens.
 
 
+**Headers:** 
+```
+{
+    "Authorization": "Token <YOUR_AUTH_KEY>",
+    "Content-Type": "application/json"
+}
+```
+
 **Request Payload:**
 
 | Field | Required | Description |
