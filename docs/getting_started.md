@@ -8,6 +8,17 @@ This document serves as a guide on integrating DiceSMS Gateway in your applicati
 - Basic understanding of REST APIs
 - Development environment setup
 
+## Base URL
+
+All API endpoints in this documentation use `https://dicesms.asia` as the base URL.
+
+| Example Endpoint | Full URL |
+|---|---|
+| `POST /api/sms-with-token/` | `https://dicesms.asia/api/sms-with-token/` |
+| `GET /api/batch-ids` | `https://dicesms.asia/api/batch-ids` |
+| `GET /api/sms-report/{batch_id}/` | `https://dicesms.asia/api/sms-report/{batch_id}/` |
+| `GET /api/transaction/report/` | `https://dicesms.asia/api/transaction/report/` |
+
 ## Account Setup
 
 ### Step 1: Sign Up on DiceSMS
