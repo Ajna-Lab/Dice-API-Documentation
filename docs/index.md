@@ -26,7 +26,7 @@ By integrating DiceSMS gateway to your application, users can send/receive messa
 
 For any inquiries regarding DiceSMS, feel free to reach out to us through:
 
-+ Mobile (Viber / Whatsapp): <a href="tel:+9801912821">**9801912821**</a>, <a href="tel:+9813946169">**9813946169**</a>
++ Mobile (Viber / Whatsapp): <a href="tel:9801912821">**9801912821**</a>, <a href="tel:9813946169">**9813946169**</a>
 + Email: <a href="mailto:contact@dicesms.asia">contact@dicesms.asia</a>, <a href="mailto:support@dicesms.asia">support@dicesms.asia</a>
 
 We are here to assist you with any questions or concerns you may have.
